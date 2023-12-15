@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* Use a color gradient for the background */
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#search-input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  /* Use a box shadow for the search box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  color: white;
+  background: #ff6b6b;
+  cursor: pointer;
+  /* Use a box shadow for the button */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-button:hover {
+  background: #ff8787;
+}
+
+#image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#image-container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  /* Use a hover effect for the images */
+  transition: transform 0.3s;
+}
+
+#image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Use media queries to make the web page responsive for small devices */
+@media (max-width: 600px) {
+  #search-input {
+      width: 200px;
+  }
+
+  #search-button {
+      width: 80px;
+  }
+
+  #image-container img {
+      width: 200px;
+      height: 150px;
+  }
+}
